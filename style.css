@@ -35,7 +35,7 @@
     --button-bg-color: var(--gray700);
     --accent-color: var(--purple);
     --text-color: var(--white900);
-    --hover-text-color: var(--gray700);
+    --hover-text-color: var(--gray900);
 
     /* Typography */
     --text-preset-1: 600 2.4rem/150% 'Inter', sans-serif;
@@ -57,7 +57,6 @@ html {
 
 body {
     width: 100%;
-    height: 100vh;
     height: 100dvh;
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -77,7 +76,7 @@ body[data-theme="dark"] {
     --button-bg-color: var(--gray700);
     --accent-color: var(--purple);
     --text-color: var(--white900);
-    --hover-text-color: var(--gray700);
+    --hover-text-color: var(--gray900);
 }
 
 body[data-theme="light"] {
@@ -90,7 +89,7 @@ body[data-theme="light"] {
 }
 
 .card-container {
-    max-width: 327px;
+    width: 327px;
     height: auto;
     background-color: var(--card-bg-color);
     display: flex;
@@ -184,7 +183,7 @@ body[data-theme="light"] {
     }
     
     .card-container {
-        max-width: 384px;
+        width: 384px;
         padding: var(--gap500);
     }
 

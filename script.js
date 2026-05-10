@@ -1,6 +1,6 @@
 const themeQuery = window.matchMedia('(prefers-color-scheme: dark)');
 const themeToggleBtnEl = document.getElementById("theme-toggle-btn");
-let isDarkTheme = true;
+let isDarkTheme = document.body.getAttribute("data-theme");
 
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     document.body.setAttribute("data-theme", "dark");
