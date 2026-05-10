@@ -2,7 +2,7 @@ const themeQuery = window.matchMedia('(prefers-color-scheme: dark)');
 const themeToggleBtnEl = document.getElementById("theme-toggle-btn");
 let isDarkTheme = document.body.getAttribute("data-theme") === "dark";
 
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+if (window.matchMedia && themeQuery.matches) {
     document.body.setAttribute("data-theme", "dark");
     themeToggleBtnEl && (themeToggleBtnEl.textContent = 'Light Mode');
     themeToggleBtnEl?.setAttribute('aria-pressed', 'true');
