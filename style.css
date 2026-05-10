@@ -188,6 +188,11 @@ body[data-theme="light"] {
         padding: var(--gap500);
     }
 
+    .profile-link-a:hover {
+        background-color: var(--button-bg-color);
+        color: var(--text-color);
+    }
+
     .attribution {
         font-size: 1.1rem; 
         position: fixed;
