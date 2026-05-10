@@ -9,13 +9,17 @@ else {
     document.body.setAttribute("data-theme", "light");
 }
 
-themeToggleBtnEl.addEventListener("click", () => {
-    ChangePageTheme();
-})
+if(themeToggleBtnEl !== null) {
+    themeToggleBtnEl.addEventListener("click", () => {
+        changePageTheme();
+    })
+}
 
-themeQuery.addEventListener('change', ChangePageTheme);
+if(themeQuery !== null) {
+    themeQuery.addEventListener('change', changePageTheme);
+}
 
-function ChangePageTheme() {
+function changePageTheme() {
     const currentTheme = document.body.getAttribute("data-theme");
 
     if (currentTheme === "dark") {
