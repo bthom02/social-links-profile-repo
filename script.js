@@ -4,13 +4,13 @@ let isDarkTheme = document.body.getAttribute("data-theme") === "dark";
 
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     document.body.setAttribute("data-theme", "dark");
-    themeToggleBtnEl && (themeToggleBtnEl.textContent = 'Dark Mode');
-    themeToggleBtnEl?.setAttribute('aria-pressed', 'false');
+    themeToggleBtnEl && (themeToggleBtnEl.textContent = 'Light Mode');
+    themeToggleBtnEl?.setAttribute('aria-pressed', 'true');
 }
 else {
     document.body.setAttribute("data-theme", "light");
-    themeToggleBtnEl && (themeToggleBtnEl.textContent = 'Light Mode');
-    themeToggleBtnEl?.setAttribute('aria-pressed', 'true');
+    themeToggleBtnEl && (themeToggleBtnEl.textContent = 'Dark Mode');
+    themeToggleBtnEl?.setAttribute('aria-pressed', 'false');
 }
 
 themeToggleBtnEl?.addEventListener("click", () => {
