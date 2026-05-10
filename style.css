@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'Inter';
+    src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf"), format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Page colors */
+
+    /* Dark mode colors */
+    --gray900: #141414;
+    --gray800: #1F1F1F;
+    --gray700: #333333;
+    /* --green: #C4F82A; */
+    --purple: #DEBADE;
+
+    /* Light mode colors */
+    --white900: #f3f3f3;
+    --white800: #e0e0e0;
+    --white700: #cccccc;
+    /* --dark-green: #6A9900; */
+    --dark-purple: #563097;
+    
+
+    /* Page colors */
+    --bg-color: var(--gray900);
+    --card-bg-color: var(--gray800);
+    --button-bg-color: var(--gray700);
+    --accent-color: var(--purple);
+    --text-color: var(--white900);
+    --hover-text-color: var(--gray700);
+
+    /* Typography */
+    --text-preset-1: 600 2.4rem/150% 'Inter', sans-serif;
+    --text-preset-2: 400 1.4rem/150% 'Inter', sans-serif;
+    --text-preset-2-bold: 700 1.4rem/150% 'Inter', sans-serif;
+
+    /* Gap variables */
+    --gap500: 40px;
+    --gap300: 24px; 
+    --gap200: 16px;
+    --gap150: 12px;
+    --gap100: 8px;
+    --gap50: 4px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    height: 100dvh;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font: var(--text-preset-2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--gap300);
+    letter-spacing: 0;
+    transition: all 0.3s ease;
+}
+
+body[data-theme="dark"] {
+    --bg-color: var(--gray900);
+    --card-bg-color: var(--gray800);
+    --button-bg-color: var(--gray700);
+    --accent-color: var(--purple);
+    --text-color: var(--white900);
+    --hover-text-color: var(--gray700);
+}
+
+body[data-theme="light"] {
+    --bg-color: var(--white700);
+    --card-bg-color: var(--white800);
+    --button-bg-color: var(--white900);
+    --accent-color: var(--dark-purple);
+    --text-color: var(--gray900);
+    --hover-text-color: var(--white900);
+}
+
+.card-container {
+    width: 327px;
+    height: auto;
+    background-color: var(--card-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--gap300);
+    padding: var(--gap300);
+    border-radius: 12px;
+}
+
+.profile-pic {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+}
+
+.person-details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap50);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.person-details h1 {
+    font: var(--text-preset-1);
+}
+
+.person-details h2 {
+    font: var(--text-preset-2-bold);
+    color: var(--accent-color);
+}
+
+.person-bio {
+    font: var(--text-preset-2);
+    color: var(--text-color)
+}
+
+.links-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--gap200);
+}
+
+.profile-link-a {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: var(--button-bg-color);
+    padding: var(--gap150);
+    border-radius: 8px;
+    color: var(--text-color);
+    text-decoration: none;
+    font: var(--text-preset-2-bold);
+    transition: background-color 0.4s ease-out, color 0.4s ease-out;
+}
+
+.profile-link-a:hover, .profile-link-a:focus-visible {
+    background-color: var(--accent-color);
+    color: var(--hover-text-color);
+    transition: background-color 0s, color 0s;
+}
+
+#theme-toggle-btn {
+    border: none;
+    width: 115px;
+    padding: var(--gap150);
+}
+
+#theme-toggle-btn:active {
+    transform: scale(98%);
+}
+
+.attribution {
+    font-size: 0.8rem; 
+    text-align: center; 
+    position: static;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media (min-width: 768px) {
+    body {
+        gap: var(--gap500);
+    }
+    
+    .card-container {
+        width: 384px;
+        padding: var(--gap500);
+    }
+
+    .attribution {
+        font-size: 1.1rem; 
+        position: fixed;
+        bottom: 30px;
+    }
+}
