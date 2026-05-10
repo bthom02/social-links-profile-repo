@@ -127,7 +127,7 @@ body[data-theme="light"] {
 
 .person-bio {
     font: var(--text-preset-2);
-    color: var(--text-color)
+    color: var(--text-color);
 }
 
 .links-container {
@@ -165,7 +165,7 @@ body[data-theme="light"] {
 }
 
 #theme-toggle-btn:active, .profile-link-a:active {
-    transform: scale(98%);
+    transform: scale(0.98);
 }
 
 .attribution {
