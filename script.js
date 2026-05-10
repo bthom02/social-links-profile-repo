@@ -1,5 +1,5 @@
 const themeQuery = window.matchMedia('(prefers-color-scheme: dark)');
-const themeToggleBtnEl = document.getElementById("theme-toggle-btn");
+const themeToggleBtnEl = document.querySelector(".theme-toggle-btn");
 let isDarkTheme = document.body.getAttribute("data-theme") === "dark";
 
 if (window.matchMedia && themeQuery.matches) {

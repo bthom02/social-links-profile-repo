@@ -132,7 +132,7 @@ body[data-theme="light"] {
     gap: var(--gap200);
 }
 
-.profile-link-a {
+.btn {
     width: 100%;
     height: auto;
     text-align: center;
@@ -145,25 +145,25 @@ body[data-theme="light"] {
     transition: background-color 0.4s ease-out, color 0.4s ease-out;
 }
 
-.profile-link-a:focus-visible {
+.btn:focus-visible {
     background-color: var(--accent-color);
     color: var(--hover-text-color);
     transition: background-color 0s, color 0s;
 }
 
-#theme-toggle-btn {
+.theme-toggle-btn {
     border: none;
     width: 115px;
 }
 
-.profile-link-a:active {
+.btn:active {
     transform: scale(0.98);
     background-color: var(--accent-color);
     color: var(--hover-text-color);
     transition: background-color 0s, color 0s;
 }
 
-#theme-toggle-btn:active {
+.theme-toggle-btn:active {
     transform: scale(0.98);
 }
 
@@ -187,7 +187,7 @@ body[data-theme="light"] {
         padding: var(--gap500);
     }
 
-    .profile-link-a:hover {
+    .btn:hover {
         background-color: var(--accent-color);
         color: var(--hover-text-color);
         transition: background-color 0s, color 0s;
