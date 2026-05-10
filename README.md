@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/social-links-profile-with-html-css-and-js-for-theme-switching-6Xa5zi2yo1](https://www.frontendmentor.io/solutions/social-links-profile-with-html-css-and-js-for-theme-switching-6Xa5zi2yo1)
 - Live Site URL: [https://bthom02.github.io/social-links-profile-repo/](https://bthom02.github.io/social-links-profile-repo/)
 
 ## My process
